@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0;
+}
+.card{
+    width: 50%;
+    display: grid;
+    background:white;
+}
+.card-image{
+    width: 100%;
+}
+.card-content{
+    text-align: center;
+}
