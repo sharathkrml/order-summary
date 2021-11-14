@@ -5,14 +5,65 @@
   align-items: center;
   padding: 10% 0;
 }
-.card{
-    width: 50%;
-    display: grid;
-    background:white;
+.card {
+  border-radius: 10px;
+  width: 25vw;
+  display: grid;
+  background: white;
 }
-.card-image{
-    width: 100%;
+.card-image {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
 }
-.card-content{
-    text-align: center;
+.txt-center {
+  text-align: center;
+}
+.order-details {
+  border-radius: 10px;
+  background-color: var(--Very-pale-blue);
+  margin: 10px 20px;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.icon-music {
+  justify-self: center;
+}
+.proceed-button {
+  text-decoration: none;
+  background-color: var(--Bright-blue);
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.proceed-button:hover {
+  background-color: var(--Desaturated-blue);
+}
+
+.cancel-button {
+  text-decoration: none;
+  margin: 10px 20px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+.cancel-button:hover{
+    color: black;
+}
+.card-title {
+  padding: 10px;
+}
+.card-content {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.order-change:hover{
+    text-decoration: none;
+}
+.order-change{
+    color: var(--Bright-blue);
 }

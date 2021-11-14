@@ -7,21 +7,25 @@ function OrderSummary() {
     <div className="container">
       <div className="card">
         <img className="card-image" src={cardImage} alt="cardimage" />
-        <h1 className="card-title"> Order Summary</h1>
-        <div className="card-content">
+        <h2 className="card-title txt-center"> Order Summary</h2>
+        <div className="card-content txt-center">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </div>
         <div className="order-details">
           <img className="icon-music" src={iconMusic} alt="iconMusic" />
           <div className="plan-details">
-            <h2 className="plan-title">Annual Plan</h2>
+            <p className="plan-title">Annual Plan</p>
             <p className="plan-price">$59.99/year</p>
-            <a href="#" >Change</a>
           </div>
+          <a className="order-change" href="#">Change</a>
         </div>
-        <a href="" className="proceed-button">Proceed to Payment</a>
-        <a href="" className="cancel-button">Cancel Order</a>
+        <a href="" className="proceed-button txt-center">
+          Proceed to Payment
+        </a>
+        <a href="" className="cancel-button txt-center">
+          Cancel Order
+        </a>
       </div>
     </div>
   );
