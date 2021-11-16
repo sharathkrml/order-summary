@@ -7,13 +7,33 @@
 }
 .card {
   border-radius: 10px;
-  width: 25vw;
+  width: 30vw;
   display: grid;
   background: white;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .card {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .card {
+    width: 70vw;
+  }
+  .card-content{
+    font-size: 13px !important;
+    /* display: none; */
+  }
 }
 .card-image {
   border-radius: 10px 10px 0px 0px;
   width: 100%;
+  object-fit: cover;
 }
 .txt-center {
   text-align: center;
@@ -30,11 +50,12 @@
 
 .icon-music {
   justify-self: center;
+  width: 80%;
 }
 .proceed-button {
   text-decoration: none;
   background-color: var(--Bright-blue);
-  margin: 10px 20px;
+  margin: 10px 10px 0 20px;
   padding: 10px;
   border-radius: 10px;
   color: white;
@@ -45,25 +66,32 @@
 
 .cancel-button {
   text-decoration: none;
-  margin: 10px 20px;
+  margin: 10px 10px 20px 20px;
   color: rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
-.cancel-button:hover{
-    color: black;
+.cancel-button:hover {
+  color: black;
 }
 .card-title {
-  padding: 10px;
+  margin-top: 25px;
+  font-size: 1.1rem;
 }
 .card-content {
-  margin: 10px;
-  padding: 10px 20px;
+  padding: 20px;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
 }
-.order-change:hover{
-    text-decoration: none;
+.order-change:hover {
+  text-decoration: none;
 }
-.order-change{
-    color: var(--Bright-blue);
+.order-change {
+  color: var(--Bright-blue);
+  font-size: 0.7rem;
+}
+.plan-details {
+  font-size: 0.7rem;
+}
+.plan-title {
+  font-weight: 800;
 }
